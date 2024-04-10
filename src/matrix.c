@@ -172,21 +172,21 @@ complex_matrix_state* cpx_matrix_inverse(complex_matrix_state* cpx_matrix)
 	InitComplexMatrix(L_Inverse, row, column);
 	InitComplexMatrix(U_Inverse, row, column);
 
-	// ¶Ô½ÇÔªËØ
+	// ï¿½Ô½ï¿½Ôªï¿½ï¿½
 	for (i = 0; i < row; i++)
 	{
 		L->arrayComplex[i * row + i].r = 1.f;
 		L->arrayComplex[i * row + i].i = 0.f;
 	}
 
-	// U µÄ µÚÒ»ÐÐÓëmatrixµÄµÚÒ»ÐÐÏàµÈ 
+	// U ï¿½ï¿½ ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½matrixï¿½Äµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ 
 	for (j = 0; j < column; j++)
 	{
 		U->arrayComplex[j].r = cpx_matrix->arrayComplex[j].r;
 		U->arrayComplex[j].i = cpx_matrix->arrayComplex[j].i;
 	}
 
-	// ±È½ÏÏµÊý
+	// ï¿½È½ï¿½Ïµï¿½ï¿½
 	norm = U->arrayComplex[0].r * U->arrayComplex[0].r + U->arrayComplex[0].i + U->arrayComplex[0].i;
 	for (i = 1;i < column;i++)
 	{

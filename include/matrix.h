@@ -3,44 +3,46 @@
 #include "kiss_fftr.h"
 
 typedef struct Complex_Matrix_State {
-	// ¾ØÕóµÄĞĞºÍÁĞ
+	// çŸ©é˜µçš„è¡Œå’Œåˆ—
 	int row, column; 
 	kiss_fft_cpx* arrayComplex;
 }complex_matrix_state;
 
 typedef struct Matrix_State {
-	// ¾ØÕóµÄĞĞºÍÁĞ
+	// çŸ©é˜µçš„è¡Œå’Œåˆ—
 	int row, column;
 	float* array;
 }matrix_state;
 
-// ³õÊ¼»¯¸´Êı
+// åˆå§‹åŒ–å¤æ•°
 void InitComplex(kiss_fft_cpx* Complex);
 
-// ³õÊ¼»¯¸´Êı¾ØÕó row£ºĞĞÊı column£º ÁĞÊı
+// åˆå§‹åŒ–å¤æ•°çŸ©é˜µ rowï¼šè¡Œæ•° columnï¼š åˆ—æ•°
 void InitComplexMatrix(complex_matrix_state* matrix, int row, int column);
 
-// ³õÊ¼»¯³£Êı¾ØÕó row£ºĞĞÊı column£º ÁĞÊı
+
+// åˆå§‹åŒ–å¸¸æ•°çŸ©é˜µ rowï¼šè¡Œæ•° columnï¼š åˆ—æ•°
 void InitMatrix(matrix_state* matrix, int row, int column);
 
-// ¸´Êı¾ØÕóÏà³Ë
+// å¤æ•°çŸ©é˜µç›¸ä¹˜
 complex_matrix_state* cpx_matmul(complex_matrix_state* cpx_matrix_a, complex_matrix_state* cpx_matrix_b);
 
-// ¸´Êı¾ØÕóÏà³ı
+// å¤æ•°çŸ©é˜µç›¸é™¤
 kiss_fft_cpx* cpx_divide(kiss_fft_cpx* a, kiss_fft_cpx* b);
 
-// ³£Êı¾ØÕóÏà³Ë
+// å¸¸æ•°çŸ©é˜µç›¸ä¹˜
 matrix_state* matmul(matrix_state* matrix_a, matrix_state* matrix_b);
 
-// ¸´Êı¾ØÕó¹²éî×ªÖÃ
+// å¤æ•°çŸ©é˜µå…±è½­è½¬ç½®
 complex_matrix_state* cpx_matrix_transpose(complex_matrix_state* cpx_matrix);
 
-// ¸´Êı¾ØÕóÇóÄæ
+// å¤æ•°çŸ©é˜µæ±‚é€†
 complex_matrix_state* cpx_matrix_inverse(complex_matrix_state* cpx_matrix);
 
-// ÊÍ·Å³£Êı¾ØÕó
+// é‡Šæ”¾å¸¸æ•°çŸ©é˜µ
 void matrix_destroy(matrix_state* matrix);
 
-// ÊÍ·Å¸´Êı¾ØÕó
+
+// é‡Šæ”¾å¤æ•°çŸ©é˜µ
 void cpx_matrix_destroy(complex_matrix_state* cpx_matrix);
 #endif

@@ -3,6 +3,25 @@
 #include "kiss_fftr.h"
 #include "matrix.h"
 
+/*
+FRAMESIZE：BES平台的帧长
+STEPSIZE：BES平台的帧移
+MIC_NUMS： 麦克风数量
+MIC_D： 麦克风的间距
+SAMPLERATES：采样率
+
+SEARCH_ANGLE_LOW：搜寻的最低角度
+SEARCH_ANGLE_HIGH：搜寻的最大角度
+SEARCH_ANGLE_STEP：搜寻的步进角度
+SEARCH_FREQ： 搜寻的频率
+ALPHA：平滑系数(0~1)，如果认为当前帧的搜寻角度置信度更大可以网上调
+角度示意图：
+        90
+        |
+        |
+        |
+0------- --------180
+*/ 
 #define FRAMESIZE 480
 #define STEPSIZE 240
 #define MIC_NUMS 4
