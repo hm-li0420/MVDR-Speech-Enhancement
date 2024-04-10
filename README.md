@@ -5,7 +5,6 @@
 1. [背景](#背景)
 2. [安装](#安装)
 3. [使用方法](#使用方法)
-4. [许可证](#许可证)
 
 ## 背景
 
@@ -73,6 +72,3 @@ mic_0.pcm mic_1.pcm mic2.pcm mic3.pcm分别为四个麦克风的录制音频文�
 ```bash
 $ git clone git@github.com:hm-li0420/MVDR-Speech-Enhancement.git
 ```
-
-## 许可证
-
