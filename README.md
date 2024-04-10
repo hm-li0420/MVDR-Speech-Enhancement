@@ -20,59 +20,46 @@ src：c文件路径
 pcm_files：噪声文件例子：45为声源在45度，90为声源在90度  
 matlab：MVDR和Capon算法的matlab实现，以及合成点声源的matlab代码 
 ```bash
-+---.vscode
-+---build
-|   +---.cmake
-|   |   \---api
-|   |       \---v1
-|   |           +---query
-|   |           |   \---client-vscode
-|   |           \---reply
-|   \---CMakeFiles
-|       +---3.25.2
-|       |   +---CompilerIdC
-|       |   |   \---tmp
-|       |   \---CompilerIdCXX
-|       |       \---tmp
-|       +---CMakeScratch
-|       +---mic_array.dir
-|       |   \---src
-|       \---pkgRedirects
-+---include
-+---matlab
-|   +---main
-|   |   +---GeneratedDataULA
-|   |   \---pesq
-|   +---Simulation
-|   |   +---Data
-|   |   +---INF-Generator
-|   |   \---RIR-Generator
-|   \---STFT
-+---out
-|   \---build
-|       \---x64-Debug
-|           +---.cmake
-|           |   \---api
-|           |       \---v1
-|           |           +---query
-|           |           |   \---client-MicrosoftVS
-|           |           \---reply
-|           +---CMakeFiles
-|           |   +---3.21.21080301-MSVC_2
-|           |   |   +---CompilerIdC
-|           |   |   |   \---tmp
-|           |   |   \---CompilerIdCXX
-|           |   |       \---tmp
-|           |   +---CMakeTmp
-|           |   +---mic_array.dir
-|           |   |   \---src
-|           |   \---ShowIncludes
-|           \---Testing
-|               \---Temporary
-+---pcm_files
-|   +---45
-|   \---90
-\---src
+│  CMakeLists.txt
+│  README.md
+│
+├─.vscode
+│      settings.json
+│      tasks.json
+│
+├─build
+│  │  CMakeCache.txt
+│  │  cmake_install.cmake
+│  │  compile_commands.json
+│  │  Makefile
+│  │  mic_array.exe
+│  ├─.cmake
+│  └─CMakeFiles
+│
+├─include
+│      bf.h
+│      kiss_fft.h
+│      kiss_fftr.h
+│      kiss_fft_log.h
+│      matrix.h
+│      _kiss_fft_guts.h
+│
+├─matlab
+│  ├─main
+│  ├─Simulation
+│  └─STFT
+├─out
+│
+├─pcm_files
+│  ├─45
+│  │
+│  └─90
+│
+└─src
+        bf.c
+        kiss_fftr.c
+        main.c
+        matrix.c
 ```
 ### 运行方法
 在build目录找到可执行文件mic_array.exe，运行以下指令：
