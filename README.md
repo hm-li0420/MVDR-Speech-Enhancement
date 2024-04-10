@@ -72,3 +72,6 @@ mic_0.pcm mic_1.pcm mic2.pcm mic3.pcm分别为四个麦克风的录制音频文�
 ```bash
 $ git clone git@github.com:hm-li0420/MVDR-Speech-Enhancement.git
 ```
+
+## 邮箱
+1632509441@qq.com
