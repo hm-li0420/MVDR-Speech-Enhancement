@@ -1,0 +1,27 @@
+[
+{
+  "directory": "A:/cproject/MVDR-Speech-Enhancement/build",
+  "command": "E:/MinGW/mingw64/bin/gcc.exe  @CMakeFiles/mic_array.dir/includes_C.rsp -g -o CMakeFiles/mic_array.dir/src/bf.c.obj -c A:/cproject/MVDR-Speech-Enhancement/src/bf.c",
+  "file": "A:/cproject/MVDR-Speech-Enhancement/src/bf.c"
+},
+{
+  "directory": "A:/cproject/MVDR-Speech-Enhancement/build",
+  "command": "E:/MinGW/mingw64/bin/gcc.exe  @CMakeFiles/mic_array.dir/includes_C.rsp -g -o CMakeFiles/mic_array.dir/src/kiss_fft.c.obj -c A:/cproject/MVDR-Speech-Enhancement/src/kiss_fft.c",
+  "file": "A:/cproject/MVDR-Speech-Enhancement/src/kiss_fft.c"
+},
+{
+  "directory": "A:/cproject/MVDR-Speech-Enhancement/build",
+  "command": "E:/MinGW/mingw64/bin/gcc.exe  @CMakeFiles/mic_array.dir/includes_C.rsp -g -o CMakeFiles/mic_array.dir/src/kiss_fftr.c.obj -c A:/cproject/MVDR-Speech-Enhancement/src/kiss_fftr.c",
+  "file": "A:/cproject/MVDR-Speech-Enhancement/src/kiss_fftr.c"
+},
+{
+  "directory": "A:/cproject/MVDR-Speech-Enhancement/build",
+  "command": "E:/MinGW/mingw64/bin/gcc.exe  @CMakeFiles/mic_array.dir/includes_C.rsp -g -o CMakeFiles/mic_array.dir/src/main.c.obj -c A:/cproject/MVDR-Speech-Enhancement/src/main.c",
+  "file": "A:/cproject/MVDR-Speech-Enhancement/src/main.c"
+},
+{
+  "directory": "A:/cproject/MVDR-Speech-Enhancement/build",
+  "command": "E:/MinGW/mingw64/bin/gcc.exe  @CMakeFiles/mic_array.dir/includes_C.rsp -g -o CMakeFiles/mic_array.dir/src/matrix.c.obj -c A:/cproject/MVDR-Speech-Enhancement/src/matrix.c",
+  "file": "A:/cproject/MVDR-Speech-Enhancement/src/matrix.c"
+}
+]
